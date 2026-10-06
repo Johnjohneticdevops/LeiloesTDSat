@@ -1,12 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+import javax.swing.JOptionPane;
 
-/**
- *
- * @author Adm
- */
 public class cadastroVIEW extends javax.swing.JFrame {
 
     /**
@@ -150,7 +143,7 @@ public class cadastroVIEW extends javax.swing.JFrame {
         
         ProdutosDAO produtodao = new ProdutosDAO();
         produtodao.cadastrarProduto(produto);
-        
+        JOptionPane.showMessageDialog(this, "Produto cadastrado com sucesso!");
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
     private void btnProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProdutosActionPerformed
